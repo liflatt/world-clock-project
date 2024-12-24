@@ -1,9 +1,78 @@
-h1,
-body,
-footer {
-  font-family: "Jost", sans-serif;
+h1 {
   text-align: center;
+  font-size: 36px;
+  color: rgb(9, 32, 54);
+}
+
+body {
+  font-family: "Work Sans", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  background: #94b8dd;
+  padding: 20px;
+}
+
+select {
+  display: block;
+  font-family: "Work Sans", serif;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: #8199b1;
+  color: white;
+}
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #333333;
+}
+
+a {
+  color: #173d61;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #e1f0ff;
+  box-shadow: rgba(227, 227, 228, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgb(2, 0, 1);
+}
+h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #28527c;
+}
+.city h2 {
+  margin: 0 0 5px;
+}
+
+.date {
+  opacity: 0.7;
+  font-size: 16px;
+  color: rgb(19, 57, 94);
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(19, 57, 94);
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 48px;
 }

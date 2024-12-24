@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A World Clock application displaying real-time global time zones and city-specific time data."
+    />
     <link rel="stylesheet" href="src/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Georama:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"
+      defer
+    ></script>
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select id="city-select">
+      <select id="city-select" aria-label="Select a city">
         <option value="">Select a city</option>
         <option value="current">Current Location</option>
         <option value="amsterdam">Amsterdam</option>
@@ -32,51 +42,56 @@
         <option value="newyork">New York</option>
         <option value="paris">Paris</option>
         <option value="tokyo">Tokyo</option>
-        <option value="tokyo">Toronto</option>
+        <option value="toronto">Toronto</option>
         <option value="shanghai">Shanghai</option>
         <option value="sydney">Sydney</option>
       </select>
       <div class="cities">
         <div class="city" id="current">
-          <h2>Current Location</h2>
-          <div class="date">December 24th, 2024</div>
-          <div class="time">2:00:36 <small>PM</small></div>
+          <div>
+            <h2>Current Location</h2>
+            <div class="date">December 24th, 2024</div>
+          </div>
+          <div class="time"><small>3:00:03 PM</small></div>
         </div>
         <div class="city" id="london">
-          <h2>London</h2>
-          <div class="date">December 24th, 2024</div>
-          <div class="time">7:53:36 <small>PM</small></div>
+          <div>
+            <h2>London</h2>
+            <div class="date">December 24th, 2024</div>
+          </div>
+          <div class="time"><small>3:00:03 PM</small></div>
         </div>
-        <div class="city" id="new-york">
-          <h2>New York</h2>
-          <div class="date">December 24th, 2024</div>
-          <div class="time">2:58:36 <small>PM</small></div>
+        <div class="city" id="shanghai">
+          <div>
+            <h2>Shanghai</h2>
+            <div class="date">December 24th, 2024</div>
+          </div>
+          <div class="time"><small>3:00:03 AM</small></div>
         </div>
-        <div class="city" id="mexico-city">
-          <h2>Mexico City</h2>
-          <div class="date">December 24th, 2024</div>
-          <div class="time">1:58:36 <small>PM</small></div>
-        </div>
-        <div class="city" id="Tokyo">
-          <h2>Tokyo</h2>
-          <div class="date">December 24th, 2024</div>
-          <div class="time">5:58:36 <small>AM</small></div>
+        <div class="city" id="newyork">
+          <div>
+            <h2>New York</h2>
+            <div class="date">December 24th, 2024</div>
+          </div>
+          <div class="time"><small>4:00:03 PM</small></div>
         </div>
       </div>
+
       <footer>
         This project was coded by
-        <a href="https://github.com/liflatt" target="_blank">Lindsey Flatt</a>,
-        is available on
+        <a href="https://github.com/liflatt" target="_blank"
+          ><strong>Lindsey Flatt</strong></a
+        >, is open-source on
         <a href="https://github.com/liflatt/world-clock-project" target="_blank"
           >GitHub</a
-        >, and is hosted on
+        >, and hosted on
         <a
           href="https://world-clock-by-lindsey-flatt.netlify.app"
           target="_blank"
           >Netlify</a
-        >
+        >.
       </footer>
     </div>
-    <script src="src/script.js"></script>
+    <script src="src/script.js" defer></script>
   </body>
 </html>
