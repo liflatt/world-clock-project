@@ -1,0 +1,9 @@
+h1,
+body,
+footer {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
