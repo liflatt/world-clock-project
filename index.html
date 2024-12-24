@@ -15,18 +15,68 @@
     <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/liflatt" target="_blank">Lindsey Flatt</a>, is
-      available on
-      <a href="https://github.com/liflatt/world-clock-project" target="_blank"
-        >GitHub</a
-      >, and is hosted on
-      <a href="https://world-clock-by-lindsey-flatt.netlify.app" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select id="city-select">
+        <option value="">Select a city</option>
+        <option value="current">Current Location</option>
+        <option value="amsterdam">Amsterdam</option>
+        <option value="buenosaires">Buenos Aires</option>
+        <option value="chicago">Chicago</option>
+        <option value="cairo">Cairo</option>
+        <option value="dubai">Dubai</option>
+        <option value="london">London</option>
+        <option value="losangeles">Los Angeles</option>
+        <option value="madrid">Madrid</option>
+        <option value="mexicocity">Mexico City</option>
+        <option value="newyork">New York</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="tokyo">Toronto</option>
+        <option value="shanghai">Shanghai</option>
+        <option value="sydney">Sydney</option>
+      </select>
+      <div class="cities">
+        <div class="city" id="current">
+          <h2>Current Location</h2>
+          <div class="date">December 24th, 2024</div>
+          <div class="time">2:00:36 <small>PM</small></div>
+        </div>
+        <div class="city" id="london">
+          <h2>London</h2>
+          <div class="date">December 24th, 2024</div>
+          <div class="time">7:53:36 <small>PM</small></div>
+        </div>
+        <div class="city" id="new-york">
+          <h2>New York</h2>
+          <div class="date">December 24th, 2024</div>
+          <div class="time">2:58:36 <small>PM</small></div>
+        </div>
+        <div class="city" id="mexico-city">
+          <h2>Mexico City</h2>
+          <div class="date">December 24th, 2024</div>
+          <div class="time">1:58:36 <small>PM</small></div>
+        </div>
+        <div class="city" id="Tokyo">
+          <h2>Tokyo</h2>
+          <div class="date">December 24th, 2024</div>
+          <div class="time">5:58:36 <small>AM</small></div>
+        </div>
+      </div>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/liflatt" target="_blank">Lindsey Flatt</a>,
+        is available on
+        <a href="https://github.com/liflatt/world-clock-project" target="_blank"
+          >GitHub</a
+        >, and is hosted on
+        <a
+          href="https://world-clock-by-lindsey-flatt.netlify.app"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
