@@ -1,78 +1,86 @@
-h1 {
-  text-align: center;
-  font-size: 36px;
-  color: rgb(9, 32, 54);
-}
-
 body {
-  font-family: "Work Sans", serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  background: #94b8dd;
+  background: linear-gradient(
+    109.6deg,
+    rgb(69, 108, 160) 11.2%,
+    rgba(0, 37, 84, 0.32) 100.2%
+  );
   padding: 20px;
+  margin: 0;
 }
-
-select {
-  display: block;
-  font-family: "Work Sans", serif;
-  width: 100%;
-  border-radius: 4px;
-  font-size: 16px;
-  padding: 10px;
-  margin-top: 20px;
-  border: none;
-  background-color: #8199b1;
-  color: white;
-}
-footer {
-  text-align: center;
-  font-size: 13px;
-  margin-top: 20px;
-  color: #333333;
-}
-
-a {
-  color: #173d61;
-}
-
 .container {
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
-  background: #e1f0ff;
-  box-shadow: rgba(227, 227, 228, 0.2) 0px 7px 29px 0px;
+  background: rgba(237, 238, 241, 0.8);
+  box-shadow: rgba(200, 202, 204, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: rgb(14, 37, 68);
+}
+
+h2 {
+  color: rgb(14, 37, 68);
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgba(69, 108, 160, 0.8);
+  color: white;
 }
 
 .city {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  text-align: left;
+  margin: 10px 0;
   padding: 30px 0;
-  border-bottom: 1px dashed rgb(2, 0, 1);
-}
-h2 {
-  margin: 0;
-  font-size: 30px;
-  color: #28527c;
-}
-.city h2 {
-  margin: 0 0 5px;
+  border-bottom: 1px dashed rgb(12, 59, 73);
 }
 
 .date {
-  opacity: 0.7;
-  font-size: 16px;
-  color: rgb(19, 57, 94);
+  font-size: 18px;
+  color: rgb(38, 79, 133);
 }
 
 .time {
-  font-size: 48px;
+  font-size: 34px;
   font-weight: bold;
-  color: rgb(19, 57, 94);
+  color: rgb(14, 37, 68);
+  justify-content: center;
+  text-align: center;
 }
 
 .time small {
-  font-size: 24px;
+  font-size: 18px;
   vertical-align: middle;
   line-height: 48px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: rgb(14, 37, 68);
+}
+
+a {
+  color: rgb(22, 150, 60);
+  font-weight: bold;
 }
