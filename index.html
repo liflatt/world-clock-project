@@ -14,39 +14,33 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"
-      defer
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select id="city-select" aria-label="Select a city">
+      <select id="city" aria-label="Select a city">
         <option value="">Select a city</option>
         <option value="current">Current Location</option>
-        <option value="amsterdam">Amsterdam</option>
-        <option value="buenosaires">Buenos Aires</option>
-        <option value="chicago">Chicago</option>
-        <option value="cairo">Cairo</option>
-        <option value="dubai">Dubai</option>
-        <option value="london">London</option>
-        <option value="losangeles">Los Angeles</option>
-        <option value="madrid">Madrid</option>
-        <option value="mexicocity">Mexico City</option>
-        <option value="newyork">New York</option>
-        <option value="paris">Paris</option>
-        <option value="tokyo">Tokyo</option>
-        <option value="toronto">Toronto</option>
-        <option value="shanghai">Shanghai</option>
-        <option value="sydney">Sydney</option>
+        <option value="Europe/Amsterdam">Amsterdam</option>
+        <option value="America/Buenos_Aires">Buenos Aires</option>
+        <option value="America/Chicago">Chicago</option>
+        <option value="Africa/Cairo">Cairo</option>
+        <option value="Asia/Dubai">Dubai</option>
+        <option value="Europe/London">London</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="Europe/Madrid">Madrid</option>
+        <option value="America/Mexico_City">Mexico City</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="America/Toronto">Toronto</option>
+        <option value="Asia/Shanghai">Shanghai</option>
+        <option value="Australia/Sydney">Sydney</option>
       </select>
-      <div class="cities">
+      <div class="cities" id="cities">
         <div class="city" id="chicago">
           <div>
             <h2>Chicago</h2>
